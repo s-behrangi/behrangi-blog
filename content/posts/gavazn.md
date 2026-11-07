@@ -11,7 +11,7 @@ TocOpen: false
 weight: 3
 ---
 
-{{< figure src="/images/gavazn_full_sample.gif" alt="Gavazn Machine" align="center">}}
+{{< figure src="images/gavazn_full_sample.gif" alt="Gavazn Machine" align="center">}}
 
 ### Visualizing Cellular Automata
 
