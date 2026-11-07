@@ -1,0 +1,135 @@
+baseURL: https://example.org/
+locale: en-us
+title: s. behrangi
+theme: ["PaperMod"]
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["posts", "papermod"]
+
+minify:
+  disableXML: true
+  # minifyOutput: true
+
+pagination:
+  disableAliases: false
+  pagerSize: 3
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      #tag: tags
+      series: series
+    menu:
+      main:
+        - name: About
+          url: about
+          weight: 1
+        - name: Archive
+          url: archives
+          weight: 2
+        #- name: Search
+        #  url: search/
+        #  weight: 2
+        #- name: Tags
+        #  url: tags/
+        #  weight: 4
+
+outputFormats:
+  llms:
+    mediaType: "text/plain"
+    baseName: "llms"
+    isPlainText: true
+    notAlternative: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+    - llms
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "s. behrangi"
+  author: s. behrangi
+  # author: ["Me", "You"] # multiple authors
+
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: false
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  # comments: false
+
+  homeInfoParams:
+    Title: "About"
+    Content: |
+      Programmer interested in optimization and visualization. [More about me..](/about/)
+      - Check out [Gavazn](https://s-behrangi.itch.io/gavazn), my cellular automaton visualizer. 
+      - I have [a tool](https://s-behrangi.github.io/colour-theme-transform/) for rapidly varying colour themes.
+
+  socialIcons:
+    - name: github
+      title: My Github
+      url: "https://github.com/s-behrangi"
+    - name: X
+      title: Find me on X
+      url: "https://x.com/sehbehrangi"
+    - name: Discord
+      title: Adde me on Discord
+      url: "https://discord.com/users/300814155613732866"
+
+  assets:
+    disableHLJS: true
+  #     favicon: "<link / abs url>"
+  #     favicon16x16: "<link / abs url>"
+  #     favicon32x32: "<link / abs url>"
+  #     apple_touch_icon: "<link / abs url>"
+  #     safari_pinned_tab: "<link / abs url>"
+
+  # cover:
+  #     hidden: true # hide everywhere but not in structured data
+  #     hiddenInList: true # hide on list pages and home
+  #     hiddenInSingle: true # hide on single page
+
+  # fuseOpts:
+  #     isCaseSensitive: false
+  #     shouldSort: true
+  #     location: 0
+  #     distance: 1000
+  #     threshold: 0.4
+  #     minMatchCharLength: 0
+  #     keys: ["title", "permalink", "summary", "content"]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+  instagram:
+    disableInlineCSS: true
+  x:
+    disableInlineCSS: true
+
+caches:
+  images:
+    dir: :cacheDir/images
