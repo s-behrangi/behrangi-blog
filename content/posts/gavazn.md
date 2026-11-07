@@ -11,7 +11,7 @@ TocOpen: false
 weight: 3
 ---
 
-{{< figure src="images/gavazn_full_sample.gif" alt="Gavazn Machine" align="center">}}
+{{< figure src="gavazn_full_sample.gif" alt="Gavazn Machine" align="center">}}
 
 ### Visualizing Cellular Automata
 
@@ -35,7 +35,7 @@ My understanding is that [CRT-Royale](https://github.com/libretro/common-shaders
 
 After negotiating with myself for a while, I settled on a `4x4` projection. This squishes some discrete behaviour like chromatic aberration into rather too few pixels, and messes with periodicity: the three channels of R, G, and B split into fours. Still, after implementing the whole pipeline, the effect works remarkably well.
 
-{{< figure src="/images/gavazn_crt_sample.gif" caption="if I may say so myself!" alt="Gavazn CRT Screen" align="center" width="500">}}
+{{< figure src="gavazn_crt_sample.gif" caption="if I may say so myself!" alt="Gavazn CRT Screen" align="center" width="500">}}
 
 ### The Machine
 
@@ -51,6 +51,6 @@ The last step was something I'd felt ambivalent but optimistic about through the
 
 I didn't think of what to call my contraption until the very end, but the spark of an idea came blessedly quick when I took the time to ruminate on it. I'd modelled the whole thing heavily off a television called the Jackal, so I thought: why not another animal name? It was a short leap from here to the word [gavazn](https://en.wiktionary.org/wiki/%DA%AF%D9%88%D8%B2%D9%86), meaning "deer" in Persian, the sound of which I've long had an aesthetic fondness for. One of my favourite music artists also has [an album by the same name](https://soundcloud.com/alisorena/sets/gavazn), which you should check out. It turned out that the romanized letters were easy to stylize, leading me to a cute logo in short order.
 
-{{< figure src="/images/gavazn_logo.png" caption="there is a stylized 313 above the Z as well..." alt="Gavazn Logo" align="center" >}}
+{{< figure src="gavazn_logo.png" caption="there is a stylized 313 above the Z as well..." alt="Gavazn Logo" align="center" >}}
 
 You can play with Gavazn on [itch](https://s-behrangi.itch.io/gavazn), and look at the code on [GitHub](https://github.com/s-behrangi/cellular_automaton_tv).
